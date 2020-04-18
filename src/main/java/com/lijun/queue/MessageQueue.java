@@ -15,7 +15,7 @@ public class MessageQueue {
 
 	@Bean(name = "queue")
 	public Queue queue() {
-		return new Queue(App.QUEUE_ID);
+		return new Queue(App.QUEUE_ID, true, false, true);
 	}
 
 	@Bean
